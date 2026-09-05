@@ -1,0 +1,37 @@
+.loader-container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.travel-loader {
+  font-size: 55px;
+  animation: fly 1.5s infinite ease-in-out;
+}
+
+.loader-container h3 {
+  margin-top: 20px;
+  color: #172033;
+  font-size: 22px;
+}
+
+.loader-container p {
+  color: #6b7280;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(-20px) rotate(-10deg);
+  }
+
+  50% {
+    transform: translateX(20px) rotate(10deg);
+  }
+
+  100% {
+    transform: translateX(-20px) rotate(-10deg);
+  }
+}

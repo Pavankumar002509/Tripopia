@@ -1,0 +1,204 @@
+.about-page {
+  min-height: 100vh;
+  background: #f8f9fb;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, #172033, #304b6f);
+  color: white;
+  text-align: center;
+  padding: 90px 8%;
+}
+
+.about-hero p {
+  color: #ffb703;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.about-hero h1 {
+  font-size: clamp(40px, 6vw, 65px);
+  margin-bottom: 20px;
+}
+
+.about-hero span {
+  display: block;
+  max-width: 650px;
+  margin: auto;
+  color: #d7dee8;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 8%;
+}
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.about-text > p {
+  color: #ff6b35;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.about-text h2 {
+  color: #172033;
+  font-size: 40px;
+  margin: 15px 0 20px;
+}
+
+.about-text > span {
+  color: #64748b;
+  line-height: 1.8;
+  display: block;
+  font-size: 16px;
+}
+
+.about-image {
+  min-height: 380px;
+  border-radius: 25px;
+  background:
+    linear-gradient(
+      rgba(23, 32, 51, 0.15),
+      rgba(23, 32, 51, 0.3)
+    ),
+    url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80")
+    center/cover;
+
+  box-shadow: 0 20px 50px rgba(23, 32, 51, 0.18);
+}
+
+.about-values {
+  text-align: center;
+}
+
+.about-values > p {
+  color: #ff6b35;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.about-values h2 {
+  color: #172033;
+  font-size: 38px;
+  margin: 12px 0 40px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.value-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 20px;
+
+  text-decoration: none;
+  color: inherit;
+
+  cursor: pointer;
+
+  box-shadow: 0 10px 30px rgba(23, 32, 51, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(23, 32, 51, 0.16);
+}
+
+.value-icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.value-card h3 {
+  color: #172033;
+  margin-bottom: 12px;
+  font-size: 19px;
+}
+
+.value-card p {
+  color: #64748b;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 18px;
+
+  color: #ff6b35;
+
+  font-weight: 700;
+
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover .card-link {
+  transform: translateX(6px);
+}
+
+
+/* Tablet */
+
+@media (max-width: 850px) {
+
+  .about-intro {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    min-height: 320px;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .about-hero {
+    padding: 70px 6%;
+  }
+
+  .about-content {
+    padding: 55px 6%;
+  }
+
+  .about-text h2 {
+    font-size: 32px;
+  }
+
+  .about-values h2 {
+    font-size: 30px;
+  }
+
+  .value-card {
+    padding: 30px 20px;
+  }
+
+}

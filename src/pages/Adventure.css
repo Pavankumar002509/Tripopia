@@ -1,0 +1,87 @@
+.category-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.category-hero {
+  padding: 95px 8%;
+  text-align: center;
+  color: white;
+  background:
+    linear-gradient(rgba(10, 20, 35, 0.7), rgba(10, 20, 35, 0.85)),
+    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=80")
+    center/cover;
+}
+
+.category-hero p {
+  color: #ffb703;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.category-hero h1 {
+  font-size: clamp(42px, 7vw, 70px);
+  margin: 18px 0;
+}
+
+.category-hero span {
+  display: block;
+  max-width: 650px;
+  margin: auto;
+  color: #e2e8f0;
+  line-height: 1.7;
+}
+
+.package-section {
+  max-width: 1250px;
+  margin: auto;
+  padding: 80px 8%;
+}
+
+.package-section-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.package-section-heading > p {
+  color: #ff6b35;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.package-section-heading h2 {
+  color: #172033;
+  font-size: 38px;
+  margin: 10px 0;
+}
+
+.package-section-heading span {
+  color: #64748b;
+}
+
+.package-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 950px) {
+  .package-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .package-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-hero {
+    padding: 75px 6%;
+  }
+
+  .package-section {
+    padding: 55px 6%;
+  }
+}
