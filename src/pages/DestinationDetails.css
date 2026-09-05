@@ -1,0 +1,240 @@
+/* Main details page */
+.destination-details-page {
+  min-height: 100vh;
+  background: #f8f9fb;
+}
+
+/* Destination hero */
+.details-hero {
+  min-height: 480px;
+  display: flex;
+  align-items: flex-end;
+  padding: 70px 8%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Hero content */
+.details-hero-content {
+  color: white;
+  max-width: 800px;
+}
+
+/* Category badge */
+.details-category {
+  display: inline-block;
+  background: #ff6b35;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+/* Destination name */
+.details-hero-content h1 {
+  font-size: clamp(50px, 8vw, 85px);
+  margin-bottom: 15px;
+}
+
+/* Location */
+.details-hero-content p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Rating */
+.details-rating {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+/* Main content */
+.details-content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 80px 8%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+}
+
+/* Content section */
+.details-section {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+/* Section heading */
+.details-section h2 {
+  color: #172033;
+  margin-bottom: 18px;
+  font-size: 28px;
+}
+
+/* Section paragraph */
+.details-section > p {
+  color: #667085;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* Highlights grid */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+/* Highlight card */
+.highlight-card {
+  background: #f7f8fa;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* Highlight icon */
+.highlight-card span {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Highlight text */
+.highlight-card p {
+  font-weight: 600;
+  color: #172033;
+}
+
+/* Booking information card */
+.booking-info-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  height: fit-content;
+  box-shadow: 0 15px 40px rgba(23, 32, 51, 0.1);
+}
+
+/* Booking card heading */
+.booking-info-card h3 {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+/* Individual booking information */
+.booking-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 15px 0;
+  border-bottom: 1px solid #edf0f3;
+}
+
+/* Booking labels */
+.booking-detail span {
+  color: #6b7280;
+}
+
+/* Booking values */
+.booking-detail strong {
+  color: #172033;
+}
+
+/* Price section */
+.booking-price {
+  padding: 25px 0;
+}
+
+/* Price label */
+.booking-price span {
+  color: #6b7280;
+}
+
+/* Price */
+.booking-price h2 {
+  color: #ff6b35;
+  font-size: 32px;
+  margin-top: 5px;
+}
+
+/* Book button */
+.book-now-btn {
+  display: block;
+  background: #ff6b35;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+/* Book button hover */
+.book-now-btn:hover {
+  background: #e85a2a;
+  transform: translateY(-2px);
+}
+
+/* Back button */
+.back-destinations-btn {
+  display: block;
+  text-align: center;
+  margin-top: 18px;
+  text-decoration: none;
+  color: #566074;
+  font-weight: 600;
+}
+
+/* Not found page */
+.destination-not-found {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Not found heading */
+.destination-not-found h1 {
+  margin-bottom: 20px;
+}
+
+/* Not found link */
+.destination-not-found a {
+  text-decoration: none;
+  background: #ff6b35;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+}
+
+/* Tablet responsive design */
+@media (max-width: 900px) {
+  .details-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+  .details-hero {
+    min-height: 400px;
+    padding: 50px 6%;
+  }
+
+  .details-content {
+    padding: 50px 5%;
+  }
+
+  .details-section {
+    padding: 25px;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+}

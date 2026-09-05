@@ -1,0 +1,82 @@
+.notfound-page {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f0f9ff, #ffffff);
+}
+
+.notfound-content {
+  text-align: center;
+  max-width: 650px;
+}
+
+.notfound-number {
+  font-size: clamp(100px, 20vw, 220px);
+  font-weight: 900;
+  line-height: 1;
+  color: #172033;
+  letter-spacing: -10px;
+}
+
+.plane {
+  font-size: 60px;
+  margin: -20px 0 10px;
+  animation: fly 3s ease-in-out infinite;
+}
+
+.notfound-content h1 {
+  font-size: 38px;
+  color: #172033;
+  margin-bottom: 15px;
+}
+
+.notfound-content p {
+  max-width: 520px;
+  margin: 0 auto 30px;
+  color: #667085;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #ff6b35;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.home-button:hover {
+  background: #172033;
+  transform: translateY(-3px);
+}
+
+@keyframes fly {
+  0%,
+  100% {
+    transform: translateX(-15px) rotate(-10deg);
+  }
+
+  50% {
+    transform: translateX(15px) rotate(10deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .notfound-content h1 {
+    font-size: 30px;
+  }
+
+  .notfound-content p {
+    font-size: 15px;
+  }
+
+  .notfound-number {
+    letter-spacing: -5px;
+  }
+}

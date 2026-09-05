@@ -1,0 +1,37 @@
+/* Remove default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Enable smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Main website styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f9fb;
+  color: #172033;
+}
+
+/* Remove default link styling */
+a {
+  color: inherit;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove default button styling */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}

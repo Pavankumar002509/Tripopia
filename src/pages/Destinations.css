@@ -1,0 +1,181 @@
+/* Main destinations page */
+.destinations-page {
+  min-height: 100vh;
+  background: #f8f9fb;
+}
+
+/* Top hero section */
+.destinations-hero {
+  background: linear-gradient(
+    135deg,
+    #172033,
+    #304b6f
+  );
+  color: white;
+  text-align: center;
+  padding: 85px 8%;
+}
+
+/* Small heading */
+.destinations-hero p {
+  color: #ffb703;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+/* Main heading */
+.destinations-hero h1 {
+  font-size: clamp(38px, 6vw, 65px);
+  margin-bottom: 18px;
+}
+
+/* Description */
+.destinations-hero span {
+  color: #d7dee8;
+  font-size: 17px;
+}
+
+/* Main content */
+.destinations-content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 70px 8%;
+}
+
+/* Search section */
+.destination-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+/* Search input */
+.destination-search input {
+  width: 100%;
+  max-width: 600px;
+  padding: 16px 20px;
+  border: 1px solid #dce1e7;
+  border-radius: 12px;
+  outline: none;
+  background: white;
+  font-size: 15px;
+}
+
+/* Search input focus */
+.destination-search input:focus {
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.1);
+}
+
+/* Result count */
+.destination-search p {
+  white-space: nowrap;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+/* Destinations grid */
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* No results section */
+.no-results {
+  text-align: center;
+  padding: 80px 20px;
+  background: white;
+  border-radius: 20px;
+}
+
+/* No results heading */
+.no-results h2 {
+  margin-bottom: 12px;
+  color: #172033;
+}
+
+/* No results description */
+.no-results p {
+  color: #6b7280;
+}
+
+/* Pagination container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+/* Pagination buttons */
+.pagination button {
+  border: none;
+  background: white;
+  color: #172033;
+  padding: 11px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+/* Pagination hover */
+.pagination button:hover:not(:disabled) {
+  background: #ff6b35;
+  color: white;
+}
+
+/* Active page */
+.pagination .active-page {
+  background: #172033;
+  color: white;
+}
+
+/* Disabled button */
+.pagination button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Tablet responsive design */
+@media (max-width: 950px) {
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .destination-search {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .destination-search input {
+    max-width: 100%;
+  }
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+  .destinations-content {
+    padding: 50px 5%;
+  }
+
+  .destinations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .destinations-hero {
+    padding: 65px 5%;
+  }
+
+  .destination-search p {
+    white-space: normal;
+  }
+}

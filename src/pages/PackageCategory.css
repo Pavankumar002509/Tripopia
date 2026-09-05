@@ -1,0 +1,127 @@
+/* Main category page */
+.category-page {
+  padding-bottom: 30px;
+}
+
+/* Category heading */
+.category-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+/* Small heading */
+.category-heading p {
+  color: #ff6b35;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+/* Main heading */
+.category-heading h2 {
+  color: #172033;
+  font-size: 36px;
+}
+
+/* Package cards grid */
+.package-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Individual package card */
+.package-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(23, 32, 51, 0.08);
+  transition: 0.3s;
+}
+
+/* Card hover */
+.package-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Package emoji section */
+.package-emoji {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #edf2f7, #dfe7f1);
+  font-size: 75px;
+}
+
+/* Package content */
+.package-card-content {
+  padding: 25px;
+}
+
+/* Package title */
+.package-card-content h3 {
+  font-size: 21px;
+  color: #172033;
+  margin-bottom: 18px;
+}
+
+/* Package details */
+.package-card-content p {
+  color: #667085;
+  line-height: 1.7;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Price and button row */
+.package-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid #edf0f3;
+}
+
+/* Package price */
+.package-price-row strong {
+  font-size: 21px;
+  color: #ff6b35;
+}
+
+/* Explore button */
+.package-price-row button {
+  border: none;
+  background: #172033;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Explore button hover */
+.package-price-row button:hover {
+  background: #ff6b35;
+}
+
+/* Tablet responsiveness */
+@media (max-width: 900px) {
+  .package-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .package-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-heading h2 {
+    font-size: 30px;
+  }
+}

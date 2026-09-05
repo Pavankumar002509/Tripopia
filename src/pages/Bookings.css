@@ -1,0 +1,261 @@
+/* Main bookings page */
+.bookings-page {
+  min-height: 100vh;
+  background: #f8f9fb;
+}
+
+/* Hero section */
+.bookings-hero {
+  background: linear-gradient(135deg, #172033, #304b6f);
+  color: white;
+  text-align: center;
+  padding: 80px 8%;
+}
+
+/* Small hero text */
+.bookings-hero p,
+.booking-form-header p,
+.booking-list-header p {
+  color: #ff6b35;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+/* Hero heading */
+.bookings-hero h1 {
+  font-size: clamp(38px, 6vw, 65px);
+  margin-bottom: 15px;
+}
+
+/* Hero description */
+.bookings-hero span {
+  color: #d7dee8;
+  font-size: 17px;
+}
+
+/* Main container */
+.bookings-container {
+  max-width: 1250px;
+  margin: auto;
+  padding: 70px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 35px;
+}
+
+/* Form and booking sections */
+.booking-form-section,
+.booking-list-section {
+  background: white;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 10px 30px rgba(23, 32, 51, 0.08);
+}
+
+/* Form heading */
+.booking-form-header {
+  margin-bottom: 30px;
+}
+
+/* Headings */
+.booking-form-header h2,
+.booking-list-header h2 {
+  color: #172033;
+  font-size: 28px;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  font-weight: 700;
+  color: #172033;
+  margin-bottom: 8px;
+}
+
+/* Inputs */
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #dce1e7;
+  border-radius: 10px;
+  outline: none;
+  background: white;
+}
+
+/* Input focus */
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #ff6b35;
+}
+
+/* Error message */
+.form-error {
+  display: block;
+  color: #e63946;
+  margin-top: 6px;
+}
+
+/* Form buttons */
+.booking-form-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* Common button style */
+.booking-submit-btn,
+.booking-cancel-btn,
+.edit-btn,
+.delete-btn {
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* Submit button */
+.booking-submit-btn {
+  background: #ff6b35;
+  color: white;
+  padding: 14px 22px;
+}
+
+/* Submit hover */
+.booking-submit-btn:hover {
+  background: #e85a2a;
+}
+
+/* Cancel button */
+.booking-cancel-btn {
+  background: #edf0f3;
+  color: #172033;
+  padding: 14px 22px;
+}
+
+/* Booking list header */
+.booking-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+/* Booking count */
+.booking-count {
+  background: #fff0ea;
+  color: #ff6b35;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* Booking list */
+.booking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Individual booking */
+.booking-item {
+  border: 1px solid #edf0f3;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  transition: 0.3s;
+}
+
+/* Booking hover */
+.booking-item:hover {
+  border-color: #ff6b35;
+  transform: translateY(-2px);
+}
+
+/* Booking destination */
+.booking-item-info h3 {
+  color: #172033;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* Booking details */
+.booking-item-info p {
+  color: #667085;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Action buttons */
+.booking-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Edit button */
+.edit-btn {
+  background: #172033;
+  color: white;
+  padding: 9px 15px;
+}
+
+/* Delete button */
+.delete-btn {
+  background: #fff0f0;
+  color: #e63946;
+  padding: 9px 15px;
+}
+
+/* Empty booking section */
+.empty-bookings {
+  text-align: center;
+  padding: 70px 20px;
+  color: #667085;
+}
+
+/* Empty icon */
+.empty-bookings span {
+  font-size: 50px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 950px) {
+  .bookings-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile design */
+@media (max-width: 600px) {
+  .bookings-container {
+    padding: 45px 5%;
+  }
+
+  .booking-form-section,
+  .booking-list-section {
+    padding: 25px;
+  }
+
+  .booking-item {
+    flex-direction: column;
+  }
+
+  .booking-actions {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}

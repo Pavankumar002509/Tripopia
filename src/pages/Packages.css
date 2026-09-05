@@ -1,0 +1,78 @@
+/* Main packages page */
+.packages-page {
+  min-height: 100vh;
+  background: #f8f9fb;
+}
+
+/* Packages hero */
+.packages-hero {
+  background: linear-gradient(135deg, #172033, #304b6f);
+  color: white;
+  text-align: center;
+  padding: 85px 8%;
+}
+
+/* Small heading */
+.packages-hero p {
+  color: #ffb703;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+/* Main heading */
+.packages-hero h1 {
+  font-size: clamp(38px, 6vw, 65px);
+  margin-bottom: 18px;
+}
+
+/* Hero description */
+.packages-hero span {
+  display: block;
+  max-width: 700px;
+  margin: auto;
+  color: #d7dee8;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+/* Navigation section */
+.packages-navigation-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 8%;
+}
+
+/* Package tabs */
+.package-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+}
+
+/* Individual tab */
+.package-tab {
+  text-decoration: none;
+  background: white;
+  color: #172033;
+  padding: 14px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+/* Tab hover */
+.package-tab:hover {
+  transform: translateY(-3px);
+  color: #ff6b35;
+}
+
+/* Active nested route */
+.active-tab {
+  background: #ff6b35;
+  color: white;
+}
